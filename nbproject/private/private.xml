@@ -3,7 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/TU%20E/Hor/Salt/LAB221/LAB221_Puzzle/src/gameForm.java</file>
+            <file>file:/E:/TU%20E/Hor/Salt/LAB221/Puzzle%20Game/src/puzzle_game/GameForm.java</file>
+            <file>file:/E:/TU%20E/Hor/Salt/LAB221/Puzzle%20Game/src/puzzle_game/SwingPuzzleGame.java</file>
+            <file>file:/E:/TU%20E/Hor/Salt/LAB221/Puzzle%20Game/src/puzzle_game/ConsolePuzzleGame.java</file>
+            <file>file:/E:/TU%20E/Hor/Salt/LAB221/Puzzle%20Game/src/puzzle_game/SwingPuzzleGameController.java</file>
+            <file>file:/E:/TU%20E/Hor/Salt/LAB221/Puzzle%20Game/src/puzzle_game/controller.java</file>
+            <file>file:/E:/TU%20E/Hor/Salt/LAB221/Puzzle%20Game/src/puzzle_game/PuzzleGame.java</file>
         </group>
     </open-files>
 </project-private>

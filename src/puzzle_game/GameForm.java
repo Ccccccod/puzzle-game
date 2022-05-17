@@ -1,8 +1,9 @@
+package puzzle_game;
+
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /*
@@ -12,18 +13,18 @@ import javax.swing.JPanel;
  */
 /**
  *
- * @author Admin
+ * @author CoD
  */
-public class gameForm extends javax.swing.JFrame {
-
-    controller c;
+public class GameForm extends javax.swing.JFrame {
+    
+    private final SwingPuzzleGameController swingPuzzleGameController;
 
     /**
      * Creates new form gameForm
      */
-    public gameForm() {
+    public GameForm() {
         initComponents();
-        c = new controller(this);
+        swingPuzzleGameController = new SwingPuzzleGameController(this);
         setLocationRelativeTo(this);
     }
 
@@ -115,11 +116,6 @@ public class gameForm extends javax.swing.JFrame {
         );
 
         btnNewGame.setText("New Game");
-        btnNewGame.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNewGameActionPerformed(evt);
-            }
-        });
 
         jLabel1.setText("Size:");
 
@@ -184,10 +180,6 @@ public class gameForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnNewGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewGameActionPerformed
-        c.createNewGame();
-    }//GEN-LAST:event_btnNewGameActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -205,20 +197,21 @@ public class gameForm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(gameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(gameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(gameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(gameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GameForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new gameForm().setVisible(true);
+                new GameForm().setVisible(true);
             }
         });
     }
